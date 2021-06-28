@@ -10,29 +10,47 @@
 </head>
 
 <body>
+  <div class="popup_conteiner">
+    <div class="popup_block">
+    <img class="popup_img" src="./svg/form-x.svg" alt="">
+
+    <h2 class="popup_title">Ваш фидбек</h2>
+    <form class="popup_form" method="post">
+    <label class="form_row">
+      <span class="form_hint">Как часто вы заходите на сайт?</span>
+      <select class="form_select">
+        <option selected class="form_name">Почти каждый день</option>
+        <option class="form_name">Раз в неделю</option>
+        <option class="form_name">Раз в месяц</option>
+      </select>
+    </label>
+    <div class="radio_form">
+      <span class="form_hint">Вы подписаны на e-mail рассылку?</span>
+    </div>
+    <div class="radio_group">
+      <label class="input">
+      <input type="radio" class="radio" name="radio_group" required>
+      <span class="radio_group_text">Да</span>
+    </label>
+    <label class="input">
+    <input type="radio" class="radio" name="radio_group">
+    <span class="radio_group_text">Нет</span>
+  </label>
+    </div>
+    <label class="popup_textarea">
+      <span class="form_hint">Расскажите, какой контент вы хотели бы видеть
+на нашем сайте?</span>
+    <textarea class="fild" placeholder="Может, больше рецептов?" required></textarea>
+  </label>
+    <button type="submit" class="popup_btn" name="button">Отправить</button>
+    </form>
+  </div>
+  </div>
   <header class="header">
     <div class="header_container">
       <a href="/" class="header_logo">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 81.6 18.5" style="enable-background:new 0 0 81.6 18.5;" xml:space="preserve">
-          <style type="text/css">
-            .st0 {
-              fill: #B59F5B;
-            }
-
-            .st1 {
-              fill: #FFFFFF;
-            }
-          </style>
-          <path class="st0" d="M12.9,3.6v14.9h-0.1l-10-9.1l0.1,8.5H0V3h0.1l10,9.2L10,3.6C10,3.6,12.9,3.6,12.9,3.6z" />
-          <path class="st1" d="M20.2,7.1c0.7-1.1,1.5-2,2.7-2.7c1.1-0.7,2.3-1,3.7-1s2.5,0.3,3.7,1c1.1,0.7,2,1.6,2.7,2.7s1,2.3,1,3.6
-        	s-0.3,2.5-1,3.7s-1.6,2-2.7,2.7s-2.3,1-3.7,1c-1.3,0-2.5-0.3-3.7-1c-1.1-0.7-2-1.5-2.7-2.7s-1-2.3-1-3.7C19.3,9.5,19.6,8.2,20.2,7.1
-        	z M22.8,13.1c0.4,0.7,0.9,1.3,1.6,1.7s1.4,0.6,2.3,0.6c0.8,0,1.5-0.2,2.2-0.6c0.7-0.4,1.2-1,1.6-1.7s0.6-1.5,0.6-2.3
-        	c0-0.9-0.2-1.6-0.6-2.3s-0.9-1.3-1.6-1.7s-1.4-0.6-2.2-0.6S25,6.3,24.4,6.8s-1.2,1-1.6,1.7s-0.6,1.5-0.6,2.3
-        	C22.2,11.6,22.4,12.4,22.8,13.1z" />
-          <path class="st1" d="M50,3.6v2.7h-7v3.1h6.2v2.7H43v3.1h7.2v2.7h-9.9V3.6H50z M45.9,2.6h-1.7L45.8,0h3L45.9,2.6z" />
-          <path class="st1" d="M71.5,3v14.9h-2.8v-6.8L64,17.7l0,0l-4.5-6.2v6.4h-2.7V3l0,0L64,13.3L71.5,3L71.5,3z" />
-          <path class="st1" d="M81.6,3.6v14.3h-2.8V3.6H81.6z" />
-        </svg></a>
+        <img src="./svg/noemi-logo.svg" alt="">
+      </a>
       <nav class="header_menu">
         <input id="menu-toggle" type="checkbox" />
         <label class="menu-btn" for="menu-toggle">
@@ -65,7 +83,7 @@
     </div>
   </header>
   <aside class="trends">
-    <h3 class="trends_header">сейчас в тренде</h3>
+    <h2 class="trends_header">сейчас в тренде</h2>
     <div class="block_cards">
       <section class="trends_card">
         <picture class="card__preview">
@@ -158,8 +176,8 @@
           </div>
         </div>
       </section>
-      <section class="main_content">
-        <div class="main_content_img">
+     <section class="main_content">
+       <div class="main_content_img">
           <img class="main_img_post" src="image/last-post2.jpg" alt="йога">
         </div>
         <div class="main_category">
@@ -181,7 +199,7 @@
           </div>
         </div>
       </section>
-      <section class="main_content">
+     <section class="main_content">
         <div class="main_content_img">
           <img class="main_img_post" src="image/last-post3.jpg" alt="Музыкальный фестиваль">
         </div>
@@ -365,50 +383,138 @@
         <h2 class="theme_title">Темы</h2>
         <ul class="theme_wrap">
           <li class="theme_link1">
-            <a href="#0" class="theme_link_item">Красота</a>
-            <span class="number_1">12</span>
+            <a href="#0" class="theme_link_item">Красота
+            <span class="number">12</span></a>
           </li>
           <li class="theme_link2">
-            <a href="#0" class="theme_link_item">Здоровье</a>
-            <span class="number_2">4</span>
+            <a href="#0" class="theme_link_item">Здоровье
+            <span class="number">4</span></a>
           </li>
           <li class="theme_link3">
-            <a href="#0" class="theme_link_item">Образ жизни</a>
-            <span class="number_3">145</span>
+            <a href="#0" class="theme_link_item">Образ жизни
+            <span class="number">145</span></a>
           </li>
           <li class="theme_link4">
-            <a href="#0" class="theme_link_item">Музыка</a>
-            <span class="number_4">28</span>
+            <a href="#0" class="theme_link_item">Музыка
+            <span class="number">28</span></a>
           </li>
           <li class="theme_link5">
-            <a href="#0" class="theme_link_item">Спорт</a>
-            <span class="number_5">62</span>
+            <a href="#0" class="theme_link_item">Спорт
+            <span class="number">62</span></a>
           </li>
           <li class="theme_link6">
-            <a href="#0" class="theme_link_item">Йога</a>
-            <span class="number_6">8</span>
+            <a href="#0" class="theme_link_item">Йога
+            <span class="number">8</span></a>
           </li>
         </ul>
       </div>
     </aside>
   </div>
+<div class="conteiner_our_products">
+    <h2 class="our_produts_title">Наши изделия</h2>
+    <div class="block_products_card">
+      <section class="product_card">
+        <picture class="product_img">
+          <source
+          media="(max-width: 640px)"
+          src="./image/shop-item-mobile1.jpg">
+          <source
+          media="(max-width: 768px)"
+          src="./image/shop-item-tablet1.jpg">
+          <img class="img_card" src="./image/shop-item-desk1.jpg" alt="Подушки">
+        </picture>
+        <div class="card_row">
+          <h2 class="product_card_title">Подушки на диван</h2>
+          <h3 class="product_card_sutitle">Набор из двух подушек
+           с модными принтами. Видео о создании <a class="video_link"href="#">здесь</a></h3>
+        <div class="card_price">
+          <div class="price_item">
+            <h4 class="old_price">1000 Р</h3>
+            <h3 class="price">800 Р</h4>
+          </div>
+          <button class="price_btn" type="submit" name="button">В магазин</button>
+        </div>
+        </div>
+      </section>
+      <section class="product_card">
+        <picture class="product_img">
+          <source
+          media="(max-width: 640px)"
+          src="./image/shop-item-mobile2.jpg">
+          <source
+          media="(max-width: 768px)"
+          src="./image/shop-item-tablet2.jpg">
+          <img class="img_card" src="./image/shop-item-desk2.jpg" alt="Подушки">
+        </picture>
+        <div class="card_row">
+          <h2 class="product_card_title">Кукла «Зайчик»</h2>
+          <h3 class="product_card_sutitle">Интерьерная рукодельная кукла «Зайчик»,
+             созданию которой <a class="video_link"href="#">посвящена весенняя
+             серия постов</a> в блоге и несколько подкастов.</h3>
+
+        <div class="card_price">
+          <div class="price_item">
+
+            <h3 class="price">3500 Р</h4>
+          </div>
+          <button class="price_btn" type="submit" name="button">В магазин</button>
+        </div>
+        </div>
+      </section>
+      <section class="product_card">
+        <picture class="product_img">
+          <source
+          media="(max-width: 640px)"
+          src="./image/shop-item-mobile3.jpg">
+          <source
+          media="(max-width: 768px)"
+          src="./image/shop-item-tablet3.jpg">
+          <img class="img_card" src="./image/shop-item-desk3.jpg" alt="Подушки">
+        </picture>
+        <div class="card_row">
+          <h2 class="product_card_title">Шестиугольная рамка</h2>
+          <h3 class="product_card_sutitle">Необычная рамка для украшения дома
+             из видео <a class="video_link"href="#">«Как сделать рамку из
+            подручных средств за 30 минут»</a></h3>
+
+        <div class="card_price">
+          <div class="price_item">
+            <h4 class="old_price">300 Р</h3>
+            <h3 class="price">400 Р</h4>
+          </div>
+          <button class="price_btn" type="submit" name="button">В магазин</button>
+        </div>
+        </div>
+      </section>
+    </div>
+  </div>
   <footer class="footer">
     <div class="footer_social">
       <ul class="social_link">
         <li class="social_twitter">
-          <a href="#" target="_blank"><i class="icon">твитер</i></a>
+          <a href="#" target="_blank">
+            <img src="./svg/004-twitter.svg" alt="twitter">
+          </a>
         </li>
         <li class="social_pinterest">
-          <a href="#" target="_blank"><i class="icon">pinterest</i></a>
+          <a href="#" target="_blank">
+            <img src="./svg/001-pinterest.svg" alt="pinterest">
+          </a>
         </li>
         <li class="social_facebook">
-          <a href="#" target="_blank"><i class="icon">facebook</i></a>
+          <a href="#" target="_blank">
+           <img class="img_cocial" src="./svg/002-facebook-logo.svg" alt="facebook">
+          </a>
         </li>
         <li class="social_instagram">
-          <a href="#" target="_blank"><i class="icon">instagram</i></a>
+          <a href="#" target="_blank">
+           <img src="./svg/005-instagram.svg" alt="instagram">
+          </a>
         </li>
         <li class="social_tumblr">
-          <a href="#" target="_blank"><i class="icon">tumblr</i></a>
+          <a href="#" target="_blank">
+          <img class="img_cocial" src="./svg/003-tumblr.svg" alt="tumblr">
+          </a>
         </li>
     </div>
     </ul>
